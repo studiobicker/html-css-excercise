@@ -189,15 +189,14 @@ a:hover {
 }
 
 input[type="search"].search-field {
-	border-radius: 2px 0 0 2px;
 	width: -webkit-calc(100% - 42px);
   width: calc(100% - 42px);
   background-color:rgb(31, 82, 111);
   border: 1px solid rgb(74, 105, 132);
   color: #fff;
-  padding: 10px;
-  width: 100%;
+  padding: 8px;
   font-size: 16px;
+  -webkit-appearance: textfield;
 }
 
 .search-submit:before {
