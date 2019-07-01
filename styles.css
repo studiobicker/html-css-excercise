@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,700');
+
+/* Box Sizing */
+*,
+input[type="search"] {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing:    border-box;
+	box-sizing:         border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Float clearing */
+
+.clearfix:before,
+.wrap:before {
+	content: " ";
+	display: table;
+}
+.clearfix:after,
+.wrap:after {
+	clear: both;
+	content: " ";
+	display: table;
+}
+
+/* Forms */
+::-webkit-input-placeholder {
+	color: #6f7a8e;
+	font-weight: 300;
+}
+
+input[type="button"] {
+	background-color: rgb(49, 68, 88);
+	border-radius: 24px;
+	border: none;
+	color: #fff;
+	cursor: pointer;
+	padding: 10px 30px;
+  width: auto;
+  font-size: 18px;
+  margin-bottom: 1em;
+}
+input[type="button"].orange-button {
+  background-color: rgb(240, 146, 51);
+}
+input[type="button"].red-button {
+  background-color: rgb(203, 56, 55);
+}
+body {
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.3;
+  font-weight: 300;
+}
+h1, h2, h3, h4, h5 {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.2;  
+  font-weight: 300;
+  color: #fff;
+}
+h1 {
+  font-size: 2.3em;
+  margin-bottom: 0.8em;
+}
+
+h2 {
+  font-size: 2em;
+  margin-bottom: 0.8em;
+}
+
+p {
+	margin: 0 0 1.5em;
+	padding: 0;
+}
+
+a {
+  color: #C12127;
+   text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.wrap {
+  margin: 0 auto;
+  max-width: 1140px;
+  width: 100%;
+  position: relative;
+}
+
+.col {
+  float: left;
+  margin: 0 10px;
+}
+
+.col-3 {
+  width: calc(33.333% - 20px);
+}
+
+.left {
+  float: left;
+  width: 40%;
+}
+.right {
+  float: right;
+  width: 50%;
+}
+.dark-background {
+  background: rgb(42, 52, 67);
+  color: #fff;
+}
+
+.dark-background a {
+  color:#fff;
+}
+.dark-background a:hover{
+  text-decoration: underline;
+}
+
+/* Navigation */
+
+.nav-bar {
+  background-color: #C12127;
+  color: rgba(255,255,255,0.8);
+  padding: 10px 15px;
+  overflow: hidden;
+  font-size: 14px;
+}
+
+.top-left {
+  float: left;
+}
+
+.top-links {
+  float: right;
+  padding: 0;
+  margin: 0;
+}
+
+.top-links li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.top-left a,
+.top-links li a,
+.nav-account a {
+  color: rgba(255,255,255,0.8);
+  text-decoration: none;
+}
+
+.top-left a:hover,
+.top-links li a:hover,
+.nav-account a {
+  color: rgba(255,255,255,1);
+}
+
+/* Site Header */
+
+.site-header {
+  background: url("images/city-scape.svg") 0 0 no-repeat;
+  background-size: cover;
+  color: #fff;
+  height: 480px;
+  padding: 10px 15px;
+}
+
+.site-branding {
+  float: left;
+  margin-right: 15px;
+}
+
+.site-branding img {
+  width: 110px;
+}
+
+.site-search {
+  float: left;
+  width: 70%;
+}
+
+.search-form {
+	position: relative;
+}
+
+input[type="search"].search-field {
+	border-radius: 2px 0 0 2px;
+	width: -webkit-calc(100% - 42px);
+  width: calc(100% - 42px);
+  background-color:rgb(31, 82, 111);
+  border: 1px solid rgb(74, 105, 132);
+  color: #fff;
+  padding: 10px;
+  width: 100%;
+  font-size: 16px;
+}
+
+.search-submit:before {
+	content: '';
+	font-size: 24px;
+	top:-2px;
+	left: 2px;
+	line-height: 42px;
+	position: relative;
+	width: 40px;
+}
+
+.search-submit {
+	background-color:rgb(31, 82, 111);
+  border: 1px solid rgb(74, 105, 132);
+	bottom: 0;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 42px;
+}
+
+.nav-account {
+  float: right;
+  display: table;
+  margin-top: 5px;
+}
+.nav-account li {
+  display: table-cell;
+  vertical-align: top;
+  padding-right: 10px;
+}
+.nav-account .bear-logo {
+  width: 25px;
+}
+
+.site-header .introduction {
+  width: 54%;
+  margin: 80px;
+}
+
+/* section collaboration */
+
+#collaboration .wrap {
+  padding: 100px 0 50px;
+}
+
+ul.usp {
+  margin: 0 0 1.5em 1.25em;
+  padding: 0;
+}
+
+.usp li {
+  margin-bottom: 1em;
+}
+
+/* section what is npm  */
+
+.site-what-is-npm {
+  background: url("images/forklift.svg") 0 0 no-repeat;
+  background-size: cover;
+  color: #fff;
+  height: 580px;
+  padding-top: 15px;
+  position: relative;
+}
+
+.what-is-npm {
+  top: 15vh;
+  position: absolute;
+  left: 0;
+  max-width: 440px;
+}
+
+/* section what can you make  */
+#registry .wrap {
+  text-align: center;
+  padding: 70px 0 0;
+}
+#registry h2 {
+  color: #373a45;
+  font-weight: 700;
+  font-size: 1.4em;
+}
+#registry .blocks {
+  margin-top: 40px;
+}
